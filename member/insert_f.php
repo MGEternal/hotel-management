@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <title>U Khao Yai</title>
+
+</head>
+<body>
+    <?php 
+    //หัว
+        require("../include/header.php")
+    ?>
+    <!-- เนื้อหา -->
+    <div class="container col-md-4">
+    <br>
+    <h2>เพิ่มสมาชิก</h2>
+    <form action="insert_p.php" method="post">
+    <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" name="username" id="username" placeholder="Enter Username" required>
+    </div>
+    <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password" required>
+    </div>
+    <div class="form-group">
+    <label for="fname">Firstname</label>
+    <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter Firstname" required>
+    </div>
+    <div class="form-group">
+    <label for="lname">Lastname</label>
+    <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter Lastname" required>
+    </div>
+    <div class="form-group">
+    <label for="tel">Telephone</label>
+    <input type="number" class="form-control" name="tel" id="tel" placeholder="Enter Telephone" required>
+    </div>
+    <div class="form-group">
+    <label for="id_card">Identify card</label>
+    <input type="number" class="form-control" name="id_card" id="id_card" placeholder="Enter Identify card" required>
+    </div>
+   
+    <div class="form-group">
+    <label for="mem_img">Image</label>
+    <input type="file" class="form-control-file" name="mem_img" id="mem_img" placeholder="Enter Image" >
+    </div>
+
+    <div class="form-group">
+    <label for="mem_type">MEMBER TYPE</label>
+    <select  class="form-control" name="mem_type" id="mem_type">
+    <option value="user">user</option>
+    <option value="admin">admin</option>
+    </select>
+    </div>
+    
+    
+    
+    <button class="btn btn-primary  col-md-2" >OK</button>
+    <button class="btn btn-danger  col-md-2" type="reset">cancel</button>
+    </form>
+    
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    </div>
+
+    <?php 
+    //ท้าย
+        require("../include/footer.php")
+    ?>
+</body>
+</html>
